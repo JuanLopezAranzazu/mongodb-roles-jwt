@@ -1,0 +1,45 @@
+
+GET http://localhost:4000/users
+
+###
+
+POST http://localhost:4000/users
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYjcyMjcwNjY2M2I0ZGRhYTM2NGM2OCIsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTY3Mjk0NjM2NCwiZXhwIjoxNjcyOTQ5OTY0fQ.cecLIuOSHThXuCOLFDcNCHNUglapfljRMOwAOE5JGys
+
+{
+  "email": "role admin",
+  "username": "role admin",
+  "password": "role admin"
+}
+
+###
+
+POST http://localhost:4000/auth/login
+Content-Type: application/json 
+
+{
+  "username": "test",
+  "password": "test"
+}
+
+###
+
+POST http://localhost:4000/users/follow
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYjcxYTYxY2YzOTZjODdkM2EzOThiYSIsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTY3Mjk0NDI0OSwiZXhwIjoxNjcyOTQ3ODQ5fQ.cUoehrK5eBmBBaeDnL66EHd96eYlLsCyMbzHi7YI884
+
+{
+  "userId": "63b71ab2cf396c87d3a398be"
+}
+
+###
+
+POST http://localhost:4000/auth/register
+Content-Type: application/json 
+
+{
+  "email": "test",
+  "username": "test",
+  "password": "test"
+}
