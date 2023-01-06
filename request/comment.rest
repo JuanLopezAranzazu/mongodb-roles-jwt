@@ -1,0 +1,28 @@
+GET http://localhost:4000/comment
+
+###
+
+POST http://localhost:4000/comment
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYjgzY2MzYjYwOGFiYTIxOTkxODU0MiIsInVzZXJuYW1lIjoidGVzdDIiLCJpYXQiOjE2NzMwMTg1OTAsImV4cCI6MTY3MzAyMjE5MH0.eXpCBU0KyPcZy70Pu4kQulRxDMNhST7DjJEuh-CsIxY
+
+{
+  "text": "test test",
+  "blogId": "63b83c81b608aba21991853e"
+}
+
+###
+
+PUT http://localhost:4000/comment/
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYjcyMjcwNjY2M2I0ZGRhYTM2NGM2OCIsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTY3Mjk0NjM2NCwiZXhwIjoxNjcyOTQ5OTY0fQ.cecLIuOSHThXuCOLFDcNCHNUglapfljRMOwAOE5JGys
+
+{
+  "text": "test"
+}
+
+###
+
+DELETE http://localhost:4000/comment/63b83d0eb608aba21991854a
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYjgzY2MzYjYwOGFiYTIxOTkxODU0MiIsInVzZXJuYW1lIjoidGVzdDIiLCJpYXQiOjE2NzMwMTg1OTAsImV4cCI6MTY3MzAyMjE5MH0.eXpCBU0KyPcZy70Pu4kQulRxDMNhST7DjJEuh-CsIxY
+

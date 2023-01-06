@@ -34,9 +34,13 @@ createRoles();
 // routes
 const userRouter = require("./routes/User");
 const authRouter = require("./routes/Auth");
+const blogRouter = require("./routes/Blog");
+const commentRouter = require("./routes/Comment");
 
 app.use("/users", userRouter);
 app.use("/auth", authRouter);
+app.use("/blog", blogRouter);
+app.use("/comment", commentRouter);
 
 app.use(logErrors);
 app.use(errorHandler);

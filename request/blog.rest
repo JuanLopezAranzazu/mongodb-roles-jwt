@@ -1,0 +1,23 @@
+GET http://localhost:4000/blog
+
+###
+
+POST http://localhost:4000/blog
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYjcyMjcwNjY2M2I0ZGRhYTM2NGM2OCIsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTY3MzAxODQ3NiwiZXhwIjoxNjczMDIyMDc2fQ.PCjbqC3U8AI2rign8zOG8vJ3iZagNvQgUqj79rOy9Rw
+
+{
+  "title": "test",
+  "body": "test"
+}
+
+###
+
+PUT http://localhost:4000/blog/
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYjcyMjcwNjY2M2I0ZGRhYTM2NGM2OCIsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTY3Mjk0NjM2NCwiZXhwIjoxNjcyOTQ5OTY0fQ.cecLIuOSHThXuCOLFDcNCHNUglapfljRMOwAOE5JGys
+
+{
+  "title": "test",
+  "body": "test"
+}
